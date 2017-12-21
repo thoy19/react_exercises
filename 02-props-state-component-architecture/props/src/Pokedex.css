@@ -1,0 +1,16 @@
+ul {
+  list-style-type: none;
+}
+
+.pokemon-contain {
+	display: flex;
+	background-color: yellow;
+	justify-content: center;
+}
+
+.pokemon-wrapper {
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	
+}

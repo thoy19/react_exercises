@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Box from './Box'
 
 class App extends Component {
   constructor(props) {
@@ -15,26 +14,10 @@ class App extends Component {
      return this.props.allColors[colorChoice];
   }
 
-
-  handleClick(idx) {
-    const { names } = this.state;
-    const newNames = names 
-      .slice(0,idx)
-      .concat(names.slice(idx + 1));
-    this.setState({
-      names: newNames
-    });
-  }
-
   render() {
-    let names = this.state.names.map((name,idx) => {
       <div> 
-        <p removeName={this.handleClick.bind(this,idx)}
-          name={name}
-          key={idx}
-        />
+        
       </div>
-    })
     return (
       <div>
         <h2>Below should be boxes</h2>
